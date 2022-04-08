@@ -15,18 +15,7 @@
 /// ゲームシーン
 /// </summary>
 class GameScene {
-	//スプライト
-	Sprite* sprite_ = nullptr;
 
-	//3Dモデル
-	Model* model_ = nullptr;
-
-	//ワールドトランスフォーム
-	WorldTransform worldtransform_;
-	//ビュープロダクションフォーム
-	ViewProjection viewProjection_;
-	//サウンドデータバンドル
-	uint32_t soundDataHandle_ = 0;
   public: // メンバ関数
 	/// <summary>
 	/// コンストクラタ
@@ -54,18 +43,11 @@ class GameScene {
 	void Draw();
 
   private: // メンバ変数
-
 	DirectXCommon* dxCommon_ = nullptr;
 	Input* input_ = nullptr;
 	Audio* audio_ = nullptr;
 	DebugText* debugText_ = nullptr;
 
-	uint32_t textureHandle_ = 0;
-
-	//音声再生バンドル
-	uint32_t voiceHandle_ = 0;
-	// 値を表示
-	int32_t value_ = 0;
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
